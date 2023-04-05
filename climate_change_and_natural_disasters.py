@@ -88,8 +88,6 @@ nat_disaster_df = orig_disaster_data.copy()
 # Remove the 'Code' column
 nat_disaster_df.drop(['Code'], axis=1, inplace=True)
 
-# Check the different types of 'Entity' values
-nat_disaster_df['Entity'].unique()
 
 # Pivot the dataframe
 nat_disaster_df = nat_disaster_df.pivot(index='Year', columns='Entity', values='Number of reported natural disasters (reported disasters)')
