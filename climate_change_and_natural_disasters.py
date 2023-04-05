@@ -154,9 +154,7 @@ colors = ['#E69F00', '#56B4E9', '#F0E442', '#009E73', '#D55E00', '#CC79A7']
 ((econ_dmg_df.drop(['All natural disasters (Economic Damage)'], axis=1).loc[1950:]) / 1e9).plot.bar(width=0.8, stacked=True, color=colors, figsize=(15, 8))
 
 plt.title('Economic damage by type of natural disaster for 1950-2018', fontsize=19)
-plt.xlabel('Year', fontsize=15)
-plt.ylabel('Economic damage (in billion US$)', fontsize=15)
-plt.legend(loc=2, prop={'size': 12})
+
 
 plt.show()
 # Combine dataframes
